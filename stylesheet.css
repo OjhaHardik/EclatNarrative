@@ -1116,28 +1116,23 @@ img {
    ABOUT PAGE (about.html)
    ========================================================================== */
 
-.about-page {
+/* Content wrapper: caps at 1280px, centred, with standard side padding */
+.about-inner {
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.about-person-section {
-  position: relative;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: var(--bg-primary);
-}
-
-.about-person-section::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: auto;
+/* Full-browser-width dashed divider — lives outside .about-inner */
+.about-dash {
   height: 1px;
   background-image: repeating-linear-gradient(to right, var(--border-dashed) 0 8px, transparent 8px 16px);
   background-size: 16px 1px;
+}
+
+.about-person-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--bg-primary);
 }
 
 .about-person-card {
@@ -1220,20 +1215,8 @@ img {
 
 /* Brands section */
 .about-brands-section {
-  position: relative;
-  padding: 120px 80px;
-}
-
-.about-brands-section::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: auto;
-  height: 1px;
-  background-image: repeating-linear-gradient(to right, var(--border-dashed) 0 8px, transparent 8px 16px);
-  background-size: 16px 1px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .about-brands-inner {
@@ -1280,26 +1263,21 @@ img {
 
 /* Big reach, One City. section */
 .about-reach-section {
-  position: relative;
-  padding: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   height: 745px;
   background-color: var(--bg-primary);
   display: flex;
-  flex-direction: column;
-  gap: 56px;
   overflow: hidden;
 }
 
-.about-reach-section::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: auto;
-  height: 1px;
-  background-image: repeating-linear-gradient(to right, var(--border-dashed) 0 8px, transparent 8px 16px);
-  background-size: 16px 1px;
+/* Inner wrapper carries the flex column layout for the reach section */
+.about-reach-section .about-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  flex: 1;
+  min-height: 0;
 }
 
 .about-reach-header {
@@ -3282,8 +3260,13 @@ img {
   }
 
   /* ---- About page ---- */
+  .about-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .about-person-section {
-    padding: 48px 20px;
+    padding: 48px 0;
   }
 
   .about-person-card {
@@ -3312,7 +3295,7 @@ img {
   }
 
   .about-brands-section {
-    padding: 48px 20px;
+    padding: 48px 0;
   }
 
   .about-brands-grid {
@@ -3326,7 +3309,10 @@ img {
 
   .about-reach-section {
     height: auto;
-    padding: 48px 20px;
+    padding: 48px 0;
+  }
+
+  .about-reach-section .about-inner {
     gap: 28px;
   }
 
