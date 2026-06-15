@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Éclat Narrative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Lexend+Zetta:wght@900&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="home.html" class="logo">
+        <img src="assets/01 - Home Page/01 - Navbar/Logo.png" alt="Éclat Narrative" class="logo-img">
+      </a>
+      <nav class="nav-menu">
+        <a href="home.html" class="nav-item">Home</a>
+        <div class="nav-has-dropdown">
+          <a href="home.html#work" class="nav-item">Work</a>
+          <div class="nav-dropdown">
+            <a href="healthcare.html" class="nav-dropdown-item">Healthcare</a>
+            <a href="restaurant.html" class="nav-dropdown-item">Restaurant</a>
+            <a href="cafe.html" class="nav-dropdown-item">Café</a>
+            <a href="beauty.html" class="nav-dropdown-item">Beauty</a>
+            <a href="education.html" class="nav-dropdown-item">Education</a>
+          </div>
+        </div>
+        <a href="home.html#services" class="nav-item">Services</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="contact.html" class="contact-btn">
+          <span>Contact</span>
+          <img src="assets/01 - Home Page/01 - Navbar/IconArrowRightUpCircle.png" alt="">
+        </a>
+      </nav>
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="contact-page-section">
+      <div class="contact-page-container">
+
+      <!-- Top row: heading + quick cards -->
+      <div class="contact-page-top">
+        <div class="contact-heading-area">
+          <h1 class="contact-title">Contact Us<span style="color: var(--brand-primary);">.</span></h1>
+          <p class="contact-subtitle">Need more information? Get in touch with us</p>
+        </div>
+        <div class="contact-quick-cards">
+          <!-- WhatsApp card -->
+          <div class="contact-quick-card">
+            <div class="contact-quick-card-top">
+              <div class="contact-quick-icon">
+                <img src="assets/contact/600d7f2fa8ca7d6fde5fbdbfb157a2c35cfe39ed.svg" alt="WhatsApp">
+              </div>
+              <div class="contact-quick-arrow">
+                <img src="assets/01 - Home Page/01 - Navbar/IconArrowRightUpCircle.png" alt="">
+              </div>
+            </div>
+            <div class="contact-quick-info">
+              <span class="contact-quick-label">WhatsApp</span>
+              <span class="contact-quick-value">+91 9170704499</span>
+            </div>
+          </div>
+          <!-- Email card -->
+          <div class="contact-quick-card">
+            <div class="contact-quick-card-top">
+              <div class="contact-quick-icon">
+                <img src="assets/contact/444d02268959295a7d72a08ffe8806461d32fb2b.svg" alt="Email">
+              </div>
+            </div>
+            <div class="contact-quick-info">
+              <span class="contact-quick-label">Email</span>
+              <span class="contact-quick-value">eclatnarrative@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom row: contact info + form -->
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;width:100%;">
+        <div class="contact-info-list">
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <img src="assets/01 - Home Page/05 - Contact/01.png" alt="Phone">
+            </div>
+            <div class="contact-info-details">
+              <span class="contact-info-label">Phone</span>
+              <span class="contact-info-value">+91 9170704499</span>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <img src="assets/01 - Home Page/05 - Contact/02.png" alt="Email">
+            </div>
+            <div class="contact-info-details">
+              <span class="contact-info-label">Email</span>
+              <span class="contact-info-value">eclanarrative@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <img src="assets/01 - Home Page/05 - Contact/03.png" alt="Location">
+            </div>
+            <div class="contact-info-details">
+              <span class="contact-info-label">Location</span>
+              <span class="contact-info-value">shalimar oel, new hyderabad, Lucknow - 226006</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container" style="width:688px;flex:none;">
+          <div class="contact-form-header">
+            <h3 class="contact-form-title">Send Message</h3>
+            <p class="contact-form-subtitle">Fill the form &amp; get in touch.</p>
+          </div>
+          <form class="contact-form" onsubmit="event.preventDefault();">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" class="form-input" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-input" placeholder="Phone Number" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-input" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-input" placeholder="Message" rows="3" style="resize:none;" required></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      </div><!-- /.contact-page-container -->
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="home.html" class="logo">
+          <img src="assets/01 - Home Page/01 - Navbar/Logo.png" alt="Éclat Narrative" class="logo-img">
+        </a>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-link" aria-label="Instagram">
+            <img src="assets/01 - Home Page/06 - Footer/03.png" alt="Instagram">
+          </a>
+          <a href="#" class="footer-social-link footer-social-linkedin" aria-label="LinkedIn">
+            <img src="assets/01 - Home Page/06 - Footer/22.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-column">
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="work.html">Work</a></li>
+            <li class="footer-link-item"><a href="home.html#services">Services</a></li>
+            <li class="footer-link-item"><a href="about.html">About</a></li>
+            <li class="footer-link-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="restaurant.html">Restaurant</a></li>
+            <li class="footer-link-item"><a href="cafe.html">Cafe</a></li>
+            <li class="footer-link-item"><a href="healthcare.html">Healthcare</a></li>
+            <li class="footer-link-item"><a href="beauty.html">Beauty</a></li>
+            <li class="footer-link-item"><a href="education.html">Education</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="#">Privacy Policy</a></li>
+            <li class="footer-link-item"><a href="#">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var hamburger = document.querySelector('.nav-hamburger');
+      var navbar = document.querySelector('.navbar');
+      hamburger.addEventListener('click', function () {
+        var open = navbar.classList.toggle('nav-open');
+        hamburger.setAttribute('aria-expanded', open);
+      });
+      document.querySelectorAll('.nav-item, .nav-dropdown-item').forEach(function (item) {
+        item.addEventListener('click', function () {
+          navbar.classList.remove('nav-open');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+
+</body>
+
+</html>

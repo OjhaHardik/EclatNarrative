@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 84.0699 84.0699" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="IconPlayCircle" clip-path="url(#clip0_4001_1330)">
+<circle id="Ellipse 58" cx="42.0376" cy="42.0325" r="38.0275" stroke="var(--stroke-0, white)" stroke-opacity="0.3" stroke-width="10"/>
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M42.0315 77.0667C61.3774 77.0667 77.0607 61.3835 77.0607 42.0376C77.0607 22.6915 61.3774 7.00848 42.0315 7.00848C22.6855 7.00848 7.00242 22.6915 7.00242 42.0376C7.00242 61.3835 22.6855 77.0667 42.0315 77.0667ZM54.2917 42.0376L35.0257 28.9017V55.1735L54.2917 42.0376Z" fill="var(--fill-0, white)"/>
+</g>
+<defs>
+<clipPath id="clip0_4001_1330">
+<rect width="84.0699" height="84.0699" fill="white"/>
+</clipPath>
+</defs>
+</svg>

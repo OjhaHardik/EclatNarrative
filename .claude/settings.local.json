@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.figma.com)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "Bash(claude mcp *)",
+      "PowerShell(claude mcp remove figma-dev-mode-mcp-server)",
+      "PowerShell(Get-ChildItem \"$env:APPDATA\\\\npm\" -ErrorAction SilentlyContinue | Select-Object Name; Get-ChildItem \"$env:LOCALAPPDATA\\\\AnthropicClaude\" -ErrorAction SilentlyContinue | Select-Object Name)",
+      "mcp__figma__get_design_context",
+      "Bash(mkdir -p \"s:/Eclat Narrative/assets-new\")",
+      "mcp__figma__get_screenshot",
+      "Bash(grep -E \"\\\\.\\(png|jpg|jpeg|webp|svg\\)$\")",
+      "Bash(Remove-Item \"s:\\\\Eclat Narrative\\\\work.html\")",
+      "PowerShell(Remove-Item \"s:\\\\Eclat Narrative\\\\work.html\" -Confirm:$false)"
+    ],
+    "additionalDirectories": [
+      "s:\\Eclat Narrative"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "figma"
+  ]
+}
